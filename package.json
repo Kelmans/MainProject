@@ -4,6 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
+    "minify:js": "uglifyjs ./src/scripts/index.js -c -m -o ./src/scripts/index.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,9 @@
   "devDependencies": {
     "eslint": "^8.55.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.0"
+    "eslint-plugin-import": "^2.29.0",
+    "uglify-js": "^3.17.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
