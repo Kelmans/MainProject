@@ -1,5 +1,4 @@
-import myModule from './main';
+import MyModule from './main';
 
-// eslint-disable-next-line new-cap
-const myModuleInstance = new myModule();
+const myModuleInstance = new MyModule();
 myModuleInstance.hello();

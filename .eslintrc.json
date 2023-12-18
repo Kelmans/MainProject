@@ -6,8 +6,6 @@
     },
     "extends": "airbnb-base",
     "parserOptions": {
-        "ecmaVersion": "latest"
-    },
-    "rules": {
+        "ecmaVersion": "latest",
     }
 }
