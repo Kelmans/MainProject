@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "build": "npx webpack --mode=production",
-    "minify:js": "uglifyjs ./src/scripts/index.js -c -m -o dist/js/index.min.js",
+    "minify:js": "uglifyjs ./src/index.js -c -m -o dist/js/index.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

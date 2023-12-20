@@ -5,7 +5,7 @@
 
 module.exports = {
   mode: 'development',
-  entry: './src/scripts/index.js',
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     // eslint-disable-next-line no-path-concat, prefer-template
