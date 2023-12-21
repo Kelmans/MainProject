@@ -1,7 +1,5 @@
-function MyModule() {
-  this.hello = function () {
-    console.log('hello');
-  };
-}
+import Header from './layouts/header';
 
-export default MyModule;
+const app = document.querySelector('#app');
+
+app.append(Header);
