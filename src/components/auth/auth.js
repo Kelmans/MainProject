@@ -1,9 +1,10 @@
 import './auth.css';
+import { createElement } from '../../services/createElement.service';
 
 const auth = document.createElement('div');
 auth.classList.add('auth');
 
-const authHeader = document.createElement('div');
+const authHeader = createElement('div', ['auth-header']);
 authHeader.classList.add('auth-header');
 
 const authImage = document.createElement('img');
