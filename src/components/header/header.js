@@ -1,21 +1,17 @@
-import './header.css';
+import './header.less';
+import { createElement } from '../../services/createElement.service';
 
-const header = document.createElement('header');
-header.classList.add('header');
+const header = createElement('header', ['header']);
 
-const buttonList = document.createElement('div');
-buttonList.classList.add('_list');
+const buttonList = createElement('div', ['_list']);
 
-const button1 = document.createElement('div');
-button1.classList.add('_button');
+const button1 = createElement('div', ['_button']);
 button1.textContent = 'Какая-то кнопка 1';
 
-const button2 = document.createElement('div');
-button2.classList.add('_button');
+const button2 = createElement('div', ['_button']);
 button2.textContent = 'Какая-то кнопка 2';
 
-const button3 = document.createElement('div');
-button3.classList.add('_button');
+const button3 = createElement('div', ['_button']);
 button3.textContent = 'Какая-то кнопка 3';
 
 buttonList.append(button1, button2, button3);
