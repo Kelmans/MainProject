@@ -3,10 +3,11 @@ import { createElement } from '../../services/createElement.service';
 
 const auth = createElement('div', ['auth']);
 
-const authHeader = createElement('div', ['auth-header']);
+const authHeader = createElement('div', ['auth-header'], {title: 'Подсказка', randomAttribute: 'Random'});
 
 const authImage = createElement('img', ['auth-header__image']);
-authImage.src = '/styles/icons/ChtoZaLev.png';
+authImage.src = '/styles/icons/lion.png';
+authImage.alt = 'Мое изображение';
 
 authHeader.append(authImage);
 

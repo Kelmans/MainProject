@@ -4,7 +4,7 @@ export function createElement(tag, classArray, content) {
   element.classList.add(...classArray);
   // eslint-disable-next-line no-restricted-syntax,guard-for-in
   for (const key in content) {
-    element.key = content[key];
+    element.setAttribute(key, content[key]);
   }
   return element;
 }
