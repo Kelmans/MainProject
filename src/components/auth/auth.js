@@ -1,30 +1,31 @@
 import './auth.less';
-import { createElement } from '../../services/createElement.service';
+import { createElement } from '../../services/createElement';
 
-const auth = createElement('div', ['login-section']);
-const formBox = createElement('div', ['formbox']);
-const action = createElement('form', ['action'], {action: '13'});
+const auth = createElement({ tag: 'div', class: 'login-section' });
+const formBox = createElement({ tag: 'div', class: 'formbox' });
+const action = createElement({ tag: 'form', class: 'action' });
+
 formBox.append(action);
 
-const title = createElement('h2', ['title']);
-title.innerText = 'Sign In'
+const title = createElement({ tag: 'h2', class: 'title' });
+title.innerText = 'Sign In';
 
-const emailBox = createElement('div', ['input-box'], {required: ''});
-const emailIconBox = createElement('span', ['icon']);
-const emailIcon = createElement('i', ['bx', 'bxs-envelope']);
-const inputEmail = createElement('input', ['email'], {type: 'email'});
-const labelEmail = createElement('label', []);
-labelEmail.innerText = 'Email'
+const emailBox = createElement({ tag: 'div', class: 'input-box', required: '' });
+const emailIconBox = createElement({ tag: 'span', class: 'icon' });
+const emailIcon = createElement({ tag: 'i', class: 'bx bxs-envelope' });
+const inputEmail = createElement({ tag: 'input', class: 'email', type: 'email' });
+const labelEmail = createElement({ tag: 'label' });
+labelEmail.innerText = 'Email';
 
 emailIconBox.append(emailIcon);
 emailBox.append(emailIconBox, inputEmail, labelEmail);
 
-const passBox = createElement('div', ['input-box'], {required: ''});
-const passIconBox = createElement('span', ['icon']);
-const passIcon = createElement('i', ['bx', 'bxs-lock-alt']);
-const inputPass = createElement('input', ['password'], {type: 'password'});
-const labelPass = createElement('label', []);
-labelPass.innerText = 'Password'
+const passBox = createElement({ tag: 'div', class: 'input-box', required: '' });
+const passIconBox = createElement({ tag: 'span', class: 'icon' });
+const passIcon = createElement({ tag: 'i', class: 'bx bxs-lock-alt' });
+const inputPass = createElement({ tag: 'input', class: 'password', type: 'password' });
+const labelPass = createElement({ tag: 'label' });
+labelPass.innerText = 'Password';
 
 passIconBox.append(passIcon);
 passBox.append(passIconBox, inputPass, labelPass);
@@ -33,7 +34,6 @@ action.append(title, emailBox, passBox);
 
 auth.append(formBox);
 
-// const authHeader = createElement('div', ['auth-header'], {title: 'Подсказка', randomAttribute: 'Random'});
 //
 // const authImage = createElement('img', ['auth-header__image']);
 // authImage.src = '/styles/icons/lion.png';
