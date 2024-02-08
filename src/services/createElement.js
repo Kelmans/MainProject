@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/prefer-default-export
 export function createElement(attributes) {
   const element = document.createElement(attributes.tag);
   // eslint-disable-next-line no-restricted-syntax,guard-for-in
