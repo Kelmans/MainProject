@@ -5,6 +5,7 @@
   "main": "script.js",
   "scripts": {
     "build": "npx webpack --mode=production",
+    "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +19,16 @@
   },
   "homepage": "https://github.com/Kelmans/projectOne#readme",
   "devDependencies": {
+    "css-loader": "^6.9.0",
     "eslint": "^8.55.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.0",
+    "html-webpack-plugin": "^5.6.0",
+    "less": "^4.2.0",
+    "less-loader": "^12.1.0",
+    "style-loader": "^3.3.4",
     "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
