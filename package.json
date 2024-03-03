@@ -2,7 +2,6 @@
   "name": "projectone-1",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "script.js",
   "scripts": {
     "build": "npx webpack --mode=production",
@@ -10,7 +9,7 @@
     "startDb": "nodemon src/main.js",
     "test": "jest"
   },
-  "jest":{
+  "jest": {
     "testEnvironment": "jsdom"
   },
   "repository": {
@@ -38,5 +37,9 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "mongo": "^0.1.0",
+    "mongodb": "^6.4.0"
   }
 }

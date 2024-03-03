@@ -1,4 +1,5 @@
-const createElement = require('../createElement');
+import { createElement } from '../createElement';
+
 test(
   'Проверяем создание эллемента',
   () => {
