@@ -18,6 +18,14 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.(ttf|eot|svg)$/,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.gif$/,
+        type: 'asset/inline',
+      },
+      {
         test: /\.less$/i,
         use: [
           {
@@ -36,6 +44,19 @@ module.exports = {
           },
         ],
       },
+    ],
+  },
+  resolve: {
+    alias: {
+      config$: './configs/app-config.js',
+      react: './vendor/react-master',
+    },
+    extensions: ['.js', '.jsx'],
+    modules: [
+      'node_modules',
+      'bower_components',
+      'shared',
+      '/shared/vendor/modules',
     ],
   },
   plugins: [
