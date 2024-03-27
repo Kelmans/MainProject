@@ -1,22 +1,25 @@
+import './common.less';
 import Header from './components/header/header';
-import auth from './components/auth/auth';
+import main from './components/mainPage/mainPage';
+import player from './components/player/player';
 
 const app = document.querySelector('#app');
 
 // const mongo = require('mongodb').MongoClient;
 app.append(Header);
-app.append(auth);
+app.append(main);
+// app.append(auth);
 
-async function postData(url = '') {
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-  return await response.json();
-}
-
-postData('http://localhost:3001/login').then((data) => {
-  console.log(data, '!!');
-});
+// async function postData(url = '') {
+//   const response = await fetch(url, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//   });
+//   return await response.json();
+// }
+//
+// postData('http://localhost:3001/login').then((data) => {
+//   console.log(data, '!!');
+// });
