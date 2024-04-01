@@ -8,6 +8,10 @@ const app = document.querySelector('#app');
 // const mongo = require('mongodb').MongoClient;
 app.append(Header);
 app.append(main);
+
+fetch('http://localhost:3006/auth/registration', {
+  method: 'POST',
+});
 // app.append(auth);
 
 // async function postData(url = '') {
