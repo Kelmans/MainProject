@@ -9,9 +9,9 @@ const app = document.querySelector('#app');
 app.append(Header);
 app.append(main);
 
-fetch('http://localhost:3006/auth/registration', {
-  method: 'POST',
-});
+// fetch('http://localhost:3000/auth/registration', {
+//   method: 'POST',
+// });
 // app.append(auth);
 
 // async function postData(url = '') {
