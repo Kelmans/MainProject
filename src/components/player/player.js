@@ -4,7 +4,7 @@ import './player.less';
 const player = createElement({ tag: 'div', class: 'player-wrapper' });
 const playerHeader = createElement({ tag: 'div', class: 'player-header' });
 const playerHeaderText = createElement({ tag: 'p', class: 'player-image-text' });
-playerHeaderText.innerText = 'Тут можно свернуть или развернуть блок';
+playerHeaderText.innerText = 'заменить';
 
 const playerHeaderImage = createElement({ tag: 'img', class: 'player-image' });
 
