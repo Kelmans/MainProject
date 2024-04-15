@@ -1,7 +1,7 @@
 import './common.less';
 import Header from './components/header/header';
 import main from './components/mainPage/mainPage';
-import player from './components/player/player';
+import coreInfo from './components/core-info/core-info';
 
 const app = document.querySelector('#app');
 

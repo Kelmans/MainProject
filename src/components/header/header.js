@@ -6,7 +6,7 @@ const header = createElement({ tag: 'header', class: 'header' });
 const headerLogoContainer = createElement({ tag: 'div', class: 'header-logo' });
 const headerLogoIcon = createElement({ tag: 'div', class: 'header-logo-icon' });
 const headerLogoText = createElement({ tag: 'div', class: 'header-logo-text' });
-headerLogoText.innerText = 'GeekMem';
+headerLogoText.innerText = 'GeekMems';
 
 headerLogoContainer.append(headerLogoIcon, headerLogoText);
 

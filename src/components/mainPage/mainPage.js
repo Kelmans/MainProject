@@ -1,8 +1,8 @@
 import { createElement } from '../../services/createElement';
 import './mainPage.less';
-import player from "../player/player";
+import coreInfo from "../core-info/core-info";
 
 const main = createElement({ tag: 'div', class: 'main' });
 
-main.append(player);
+main.append(coreInfo);
 export default main;
