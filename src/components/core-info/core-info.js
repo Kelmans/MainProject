@@ -2,6 +2,9 @@ import { createElement } from '../../services/createElement';
 import './core-info.less';
 
 const coreInfo = createElement({ tag: 'div', class: 'coreInfo-wrapper' });
+const coreInfoContainer = createElement({ tag: 'div', class: 'coreInfo-container' });
+const coreInfoConsultContainer = createElement({ tag: 'div', class: 'coreInfo-container-consult' });
+const coreInfoCoursesContainer = createElement({ tag: 'div', class: 'coreInfo-container-courses' });
 const coreInfoTitle = createElement({ tag: 'div', class: 'coreInfo-title' });
 coreInfoTitle.innerText = 'Обучающая платформа онлайн-курсов GeekMems';
 
@@ -44,5 +47,8 @@ briefInformationText.append(
 briefInformation.append(briefInformationVideo, briefInformationText);
 consultation.append(consultationTitle, nameInput, emailInput, phoneInput, button);
 courses.append(a1, a2, a3);
-coreInfo.append(coreInfoTitle, courses, consultation, briefInformation);
+coreInfoConsultContainer.append(consultation);
+coreInfoCoursesContainer.append(coreInfoTitle, courses);
+coreInfoContainer.append(coreInfoCoursesContainer, coreInfoConsultContainer);
+coreInfo.append(coreInfoContainer, briefInformation);
 export default coreInfo;

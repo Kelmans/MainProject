@@ -1,18 +1,22 @@
+@import "styles/vars.less";
+
 .coreInfo {
   &-wrapper {
     background: white;
+    display: flex;
+    flex-direction: column;
 
     .courses {
       display: flex;
       &-item {
-        margin-right: 8px;
+        margin-right: @size-xxs;
         color: #191816;
         white-space: nowrap;
         cursor: pointer;
         background-color: #fff;
         border: 1px solid #000;
         border-radius: 9007200000000000px;
-        padding: 10px 24px 8px;
+        padding: 10px @size-m @size-xxs;
         font-size: 20px;
         line-height: 1.2;
         text-decoration: none;
@@ -21,7 +25,17 @@
     }
   }
 
+  &-container {
+    display: flex;
+    margin-bottom: @size-xl;
+
+    &-courses {
+      margin-right: @size-xl;
+    }
+  }
+
   &-title {
+    margin-bottom: @size-m;
     font-weight: bold;
     font-size: 51px;
     font-family: Arial, sans-serif;
