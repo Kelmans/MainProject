@@ -18,6 +18,9 @@
   "bugs": {
     "url": "https://github.com/Kelmans/projectOne/issues"
   },
+  "imports": {
+    "#*": "./src/*"
+  },
   "homepage": "https://github.com/Kelmans/projectOne#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.24.0",
