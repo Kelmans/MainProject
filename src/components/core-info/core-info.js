@@ -5,15 +5,15 @@ const coreInfo = createElement({ tag: 'div', class: 'core-info__wrapper' });
 const coreInfoContainer = createElement({ tag: 'div', class: 'core-info__container' });
 const coreInfoConsultContainer = createElement({ tag: 'div', class: 'core-info__container-consult' });
 const coreInfoCoursesContainer = createElement({ tag: 'div', class: 'core-info__container-courses' });
-const coreInfoTitle = createElement({ tag: 'div', class: 'core-info__title', innerText: 'Обучающая платформа онлайн-курсов GeekMems' });
+const coreInfoTitle = createElement({ tag: 'div', class: 'core-info__title', textContent: 'Обучающая платформа онлайн-курсов GeekMems' });
 
 const courses = createElement({ tag: 'div', class: 'courses' });
 // Тут нужен будет какой-нить метод, что будет заполнить по входившему файлу список
-const a1 = createElement({ tag: 'a', class: 'courses-item', innerText: 'Мемология' });
-const a2 = createElement({ tag: 'a', class: 'courses-item', innerText: 'Тарология' });
-const a3 = createElement({ tag: 'a', class: 'courses-item', innerText: 'Программирование' });
+const a1 = createElement({ tag: 'a', class: 'courses-item', textContent: 'Мемология' });
+const a2 = createElement({ tag: 'a', class: 'courses-item', textContent: 'Тарология' });
+const a3 = createElement({ tag: 'a', class: 'courses-item', textContent: 'Программирование' });
 
-const consultation = createElement({ tag: 'div', class: 'consultation', innerText: 'Тут будет окно с инфой для связи' });
+const consultation = createElement({ tag: 'div', class: 'consultation', textContent: 'Тут будет окно с инфой для связи' });
 const consultationTitle = createElement({ tag: 'div' });
 const nameInput = createElement({ tag: 'input' });
 const emailInput = createElement({ tag: 'input' });
@@ -21,12 +21,12 @@ const phoneInput = createElement({ tag: 'input' });
 const button = createElement({ tag: 'button' });
 
 const briefInformation = createElement({ tag: 'div', class: 'brief-information' });
-const briefInformationVideo = createElement({ tag: 'div', innerText: 'Сюда добавляю видео с презентацией' });
+const briefInformationVideo = createElement({ tag: 'div', textContent: 'Сюда добавляю видео с презентацией' });
 const briefInformationText = createElement({ tag: 'div' });
-const briefInformation1 = createElement({ tag: 'div', innerText: 'Индивидуальный путь обучения' });
-const briefInformation2 = createElement({ tag: 'div', innerText: 'Интерактивные онлайн-уроки с экспертами' });
-const briefInformation3 = createElement({ tag: 'div', innerText: 'Помощь с познанием мира' });
-const briefInformation4 = createElement({ tag: 'div', innerText: 'Готовое портфолио по итогам обучения' });
+const briefInformation1 = createElement({ tag: 'div', textContent: 'Индивидуальный путь обучения' });
+const briefInformation2 = createElement({ tag: 'div', textContent: 'Интерактивные онлайн-уроки с экспертами' });
+const briefInformation3 = createElement({ tag: 'div', textContent: 'Помощь с познанием мира' });
+const briefInformation4 = createElement({ tag: 'div', textContent: 'Готовое портфолио по итогам обучения' });
 
 briefInformationText.append(
   briefInformation1,
