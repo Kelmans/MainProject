@@ -1,4 +1,4 @@
-import { createElement } from '#services/createElement';
+import { createElement } from 'services/createElement';
 import './mainPage.less';
 import coreInfo from "../core-info/core-info";
 

@@ -1,5 +1,5 @@
 import './header.less';
-import { createElement } from '#services/createElement';
+import { createElement } from 'services/createElement';
 
 const header = createElement({ tag: 'header', class: 'header' });
 

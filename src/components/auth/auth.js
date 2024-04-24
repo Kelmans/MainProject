@@ -1,5 +1,5 @@
 import './auth.less';
-import { createElement } from '#services/createElement';
+import { createElement } from 'services/createElement';
 
 const auth = createElement({ tag: 'div', class: 'login-section' });
 const formBox = createElement({ tag: 'div', class: 'formbox' });

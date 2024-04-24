@@ -1,4 +1,4 @@
-import { createElement } from '#services/createElement';
+import { createElement } from 'services/createElement';
 import './core-info.less';
 
 const coreInfo = createElement({ tag: 'div', class: 'core-info__wrapper' });
