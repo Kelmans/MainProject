@@ -1,20 +1,26 @@
 import './header.less';
-import { createElement } from '../../services/createElement';
+import { createElement } from 'services/createElement';
 
 const header = createElement({ tag: 'header', class: 'header' });
 
-const buttonList = createElement({ tag: 'div', class: '_list' });
+const headerLogoContainer = createElement({ tag: 'div', class: 'header-logo' });
+const headerLogoIcon = createElement({ tag: 'div', class: 'header-logo-icon' });
+const headerLogoText = createElement({ tag: 'div', class: 'header-logo-text', textContent: 'GeekMems' });
 
-const button1 = createElement({ tag: 'div', class: '_button' });
-button1.innerText = 'Какая-то кнопка 1';
+headerLogoContainer.append(headerLogoIcon, headerLogoText);
 
-const button2 = createElement({ tag: 'div', class: '_button' });
-button2.innerText = 'Какая-то кнопка 2';
+const headerButtonContainer = createElement({ tag: 'div', class: 'header-button' });
+const button1 = createElement({ tag: 'div', class: '_button', textContent: 'Раздел 1' });
 
-const button3 = createElement({ tag: 'div', class: '_button' });
-button3.innerText = 'Какая-то кнопка 3';
+const button2 = createElement({ tag: 'div', class: '_button', textContent: 'Раздел 2' });
 
-buttonList.append(button1, button2, button3);
-header.append(buttonList);
+const button3 = createElement({ tag: 'div', class: '_button', textContent: 'Раздел 3' });
+
+const button4 = createElement({ tag: 'div', class: '_button', textContent: 'Войти' });
+
+const button5 = createElement({ tag: 'div', class: '_button', textContent: 'Выйти' });
+
+headerButtonContainer.append(button1, button2, button3, button4, button5);
+header.append(headerLogoContainer, headerButtonContainer);
 
 export default header;

@@ -1,22 +1,29 @@
+import './common.less';
 import Header from './components/header/header';
-import auth from './components/auth/auth';
+import main from './components/mainPage/mainPage';
+import coreInfo from './components/core-info/core-info';
 
 const app = document.querySelector('#app');
 
 // const mongo = require('mongodb').MongoClient;
 app.append(Header);
-app.append(auth);
+app.append(main);
 
-async function postData(url = '') {
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-  return await response.json();
-}
+// fetch('http://localhost:3000/auth/registration', {
+//   method: 'POST',
+// });
+// app.append(auth);
 
-postData('http://localhost:3001/login').then((data) => {
-  console.log(data, '!!');
-});
+// async function postData(url = '') {
+//   const response = await fetch(url, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//   });
+//   return await response.json();
+// }
+//
+// postData('http://localhost:3001/login').then((data) => {
+//   console.log(data, '!!');
+// });

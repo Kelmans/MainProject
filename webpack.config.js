@@ -50,6 +50,7 @@ module.exports = {
     alias: {
       config$: './configs/app-config.js',
       react: './vendor/react-master',
+      services: path.resolve(__dirname, 'src/services'),
     },
     extensions: ['.js', '.jsx'],
     modules: [
