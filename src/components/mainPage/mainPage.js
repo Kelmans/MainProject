@@ -1,8 +1,8 @@
-import { createElement } from 'services/createElement';
 import './mainPage.less';
-import coreInfo from "../core-info/core-info";
+import coreInfo from '../core-info/core-info';
+import { jsx } from 'services/jsx';
 
-const main = createElement({ tag: 'div', class: 'main' });
+const main = jsx({ tag: 'div', class: 'main' });
 
 main.append(coreInfo);
 export default main;

@@ -1,47 +1,27 @@
 import './auth.less';
-import { createElement } from 'services/createElement';
+import { jsx } from 'services/jsx';
 
-const auth = createElement({ tag: 'div', class: 'login-section' });
-const formBox = createElement({ tag: 'div', class: 'formbox' });
-const action = createElement({ tag: 'form', class: 'action' });
+const auth = jsx({ tag: 'div', class: 'login-section' },
+  jsx({ tag: 'div', class: 'formbox' },
+    jsx({ tag: 'form', class: 'action' },
+      jsx({ tag: 'h2', class: 'title', textContent: 'Sign In' }),
+      jsx({ tag: 'div', class: 'input-box'},
+        jsx({ tag: 'span', class: 'icon' },
+          jsx({ tag: 'i', class: 'bx bxs-envelope' })),
+        jsx({ tag: 'input', class: 'email', type: 'email', required: '', }),
+        jsx({ tag: 'label', textContent: 'Email' })
+        ),
+      jsx({ tag: 'span', class: 'icon' } ,
+        jsx({ tag: 'i', class: 'bx bxs-lock-alt' })),
+      jsx(
+        jsx({ tag: 'div', class: 'input-box' }) ,
+        jsx({ tag: 'input', class: 'password', type: 'password', required: '', }),
+        jsx({ tag: 'label', textContent: 'Password' }),
+        ),
+      jsx({ tag: 'button', class: 'btn', textContent: 'Login In' }),
+      jsx({ tag: 'div', class: 'create-account' },
+        jsx({ tag: 'p', textContent: 'Create an Account?' },
+          jsx({ tag: 'p', textContent: 'Create an Account?' })))
+      )));
 
-formBox.append(action);
-
-const title = createElement({ tag: 'h2', class: 'title', textContent: 'Sign In' });
-
-const emailBox = createElement({ tag: 'div', class: 'input-box' });
-const emailIconBox = createElement({ tag: 'span', class: 'icon' });
-const emailIcon = createElement({ tag: 'i', class: 'bx bxs-envelope' });
-const inputEmail = createElement({
-  tag: 'input', class: 'email', type: 'email', required: '',
-});
-const labelEmail = createElement({ tag: 'label', textContent: 'Email' });
-
-emailIconBox.append(emailIcon);
-emailBox.append(emailIconBox, inputEmail, labelEmail);
-
-const passBox = createElement({ tag: 'div', class: 'input-box' });
-const passIconBox = createElement({ tag: 'span', class: 'icon' });
-const passIcon = createElement({ tag: 'i', class: 'bx bxs-lock-alt' });
-const inputPass = createElement({
-  tag: 'input', class: 'password', type: 'password', required: '',
-});
-const labelPass = createElement({ tag: 'label', textContent: 'Password' });
-
-passIconBox.append(passIcon);
-passBox.append(passIconBox, inputPass, labelPass);
-
-const createAccountBox = createElement({ tag: 'div', class: 'create-account' });
-const createAccount = createElement({ tag: 'p', textContent: 'Create an Account?' });
-
-const signIn = createElement({ tag: 'a', href: '#', textContent: 'Sign In' });
-
-createAccount.append(signIn);
-createAccountBox.append(createAccount);
-
-const loginIn = createElement({ tag: 'button', class: 'btn', textContent: 'Login In' });
-
-action.append(title, emailBox, passBox, loginIn, createAccountBox);
-
-auth.append(formBox);
 export default auth;
