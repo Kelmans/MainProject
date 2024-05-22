@@ -1,5 +1,5 @@
 import './core-info.less';
-import { jsx } from 'services/jsx';
+import { jsx } from 'jsx';
 
 const coreInfo = jsx(
   { tag: 'div', class: 'core-info__wrapper' },
