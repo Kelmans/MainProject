@@ -8,9 +8,13 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "plugins": [
+        "filenames"
+    ],
     "rules": {
         "import/prefer-default-export": "off",
         "import/extensions": "off",
-        "import/no-unresolved": "off"
+        "import/no-unresolved": "off",
+        "filenames/match-regex": ["error", "^[a-z]+([A-Z][a-z]+)*$", true]
     }
 }
