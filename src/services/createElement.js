@@ -1,5 +1,5 @@
 export function createElement(attributes) {
-  const element = document.createElement(attributes.tag);
+  const element = document.createElement(attributes?.tag || 'div');
   // eslint-disable-next-line no-restricted-syntax,guard-for-in
   for (const key in attributes) {
     if (key === 'textContent') {
