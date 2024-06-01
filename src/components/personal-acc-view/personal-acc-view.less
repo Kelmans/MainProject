@@ -6,71 +6,72 @@
   height: 100%;
   background: darkgray;
 
-  .sidebar {
+  &__sidebar {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
     min-width: 300px;
     width: 15%;
     padding: 40px;
+  }
 
-    &__content {
-      margin-bottom: @size-s;
+  &__content {
+    margin-bottom: @size-s;
 
-      &_item {
-        color: gray;
+    &_item {
+      color: gray;
 
-        &:hover {
-          cursor: pointer;
-          color: green;
+      &:hover {
+        cursor: pointer;
+        color: green;
+      }
+    }
+  }
+
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  &__content {
+    display: flex;
+
+    &-left {
+      min-width: 500px;
+      display: flex;
+      flex-direction: column;
+
+      &_icon {
+        background: url("styles/icons/user.png");
+        width: 128px;
+        height: 128px;
+      }
+
+      &_name {
+        padding-top: @size-s;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: @size-m;
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+
+      &_field {
+        margin-bottom: @size-s;
+        width: fit-content;
+        display: flex;
+        font-size: 20px;
+
+        &-value {
+          padding-left: @size-xxs;
         }
       }
     }
   }
 
-  .info {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-
-    .content {
-      display: flex;
-
-      &__left {
-        min-width: 500px;
-        display: flex;
-        flex-direction: column;
-
-        &_icon {
-          background: url("styles/icons/user.png");
-          width: 128px;
-          height: 128px;
-        }
-
-        &_name {
-          padding-top: @size-s;
-          font-family: 'Times New Roman', Times, serif;
-          font-size: @size-m;
-        }
-      }
-
-      &__right {
-        display: flex;
-        flex-direction: column;
-
-        .field {
-          margin-bottom: @size-s;
-          width: fit-content;
-          display: flex;
-          font-size: 20px;
-
-          &__value {
-            padding-left: @size-xxs;
-          }
-        }
-      }
-    }
-
-    .chart {
-      padding-top: 40px;
-    }
+  &__chart {
+    padding-top: 40px;
   }
 }

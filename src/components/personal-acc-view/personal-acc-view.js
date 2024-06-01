@@ -11,45 +11,44 @@ initChart('Нейм графика', [
 const personalAcc = jsx(
   { class: 'personal-acc-view' },
   jsx(
-    { class: 'sidebar' },
+    { class: 'personal-acc-view__sidebar' },
     jsx(
-      { class: 'sidebar__content', id: 'side' },
-      jsx({ class: 'sidebar__content_icon' }),
-      jsx({ class: 'sidebar__content_item', textContent: 'Личный кабинет' }),
+      { class: 'personal-acc-view__content', id: 'side' },
+      jsx({ class: 'personal-acc-view__content_icon' }),
+      jsx({ class: 'personal-acc-view__content_item', textContent: 'Личный кабинет' }),
     ),
     jsx(
-      { class: 'sidebar__content' },
-      jsx({ class: 'sidebar__content_icon' }),
-      jsx({ class: 'sidebar__content_item', textContent: 'Мои заказы' }),
+      { class: 'personal-acc-view__content' },
+      jsx({ class: 'personal-acc-view__content_icon' }),
+      jsx({ class: 'personal-acc-view__content_item', textContent: 'Мои заказы' }),
     ),
   ),
   jsx(
-    { class: 'info' },
-    jsx({ class: 'content' }, jsx(
-      { class: 'content__left' },
-      jsx({ class: 'content__left_icon' }),
-      jsx({ class: 'content__left_name', textContent: 'Васильев Василий Васильевич' }),
+    { class: 'personal-acc-view__info' },
+    jsx({ class: 'personal-acc-view__content' }, jsx(
+      { class: 'personal-acc-view__content-left' },
+      jsx({ class: 'personal-acc-view__content-left_icon' }),
+      jsx({ class: 'personal-acc-view__content-left_name', textContent: 'Васильев Василий Васильевич' }),
     ), jsx(
-      { class: 'content__right' },
+      { class: 'personal-acc-view__content-right' },
       jsx(
-        { class: 'field' },
-        jsx({ class: 'field__text', textContent: 'Mail:' }),
-        jsx({ class: 'field__value', textContent: 'Собака@маил.ру' }),
+        { class: 'personal-acc-view__content-right_field' },
+        jsx({ class: 'personal-acc-view__content-right_field-text', textContent: 'Mail:' }),
+        jsx({ class: 'personal-acc-view__content-right_field-value', textContent: 'Собака@маил.ру' }),
       ),
       jsx(
-        { class: 'field' },
-        jsx({ class: 'field__text', textContent: 'Phone:' }),
-        jsx({ class: 'field__value', textContent: '+77777777' }),
+        { class: 'personal-acc-view__content-right_field' },
+        jsx({ class: 'personal-acc-view__content-right_field-text', textContent: 'Phone:' }),
+        jsx({ class: 'personal-acc-view__content-right_field-value', textContent: '+77777777' }),
       ),
       jsx(
-        { class: 'field' },
-        jsx({ class: 'field__text', textContent: 'Очень важная инфа:' }),
-        jsx({ class: 'field__value', textContent: 'бла бла бла' }),
+        { class: 'personal-acc-view__content-right_field' },
+        jsx({ class: 'personal-acc-view__content-right_field-text', textContent: 'Очень важная инфа:' }),
+        jsx({ class: 'personal-acc-view__content-right_field-value', textContent: 'бла бла бла' }),
       ),
     )),
-    jsx({ class: 'chart', id: 'chart_div' }),
+    jsx({ class: 'personal-acc-view__chart', id: 'chart_div' }),
   ),
 );
-
 
 export default personalAcc;
