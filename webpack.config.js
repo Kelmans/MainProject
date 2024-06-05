@@ -51,7 +51,7 @@ module.exports = {
       config$: './configs/app-config.js',
       react: './vendor/react-master',
       services: path.resolve(__dirname, 'src/services'),
-      styles: path.resolve(__dirname, 'styles'),
+      assets: path.resolve(__dirname, 'assets'),
       components: path.resolve(__dirname, 'src/components'),
       jsx: path.resolve(__dirname, 'src/services/jsx'),
     },

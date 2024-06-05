@@ -1,4 +1,4 @@
-@import "styles/vars.less";
+@import "assets/styles/vars.less";
 
 .personal-acc-view {
   display: flex;
@@ -27,47 +27,47 @@
   }
 
 
-  &__info {
+  &-info {
     display: flex;
     flex-direction: column;
     padding: 40px;
   }
 
-  &__content {
+  &-content {
     display: flex;
+  }
 
-    &-left {
-      min-width: 500px;
+  &-form {
+    display: flex;
+    flex-direction: column;
+
+    &__field {
+      margin-bottom: @size-s;
+      width: fit-content;
       display: flex;
-      flex-direction: column;
+      font-size: 20px;
 
-      &_icon {
-        background: url("styles/icons/user.png");
-        width: 128px;
-        height: 128px;
-      }
-
-      &_name {
-        padding-top: @size-s;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: @size-m;
+      &-value {
+        padding-left: @size-xxs;
       }
     }
+  }
 
-    &-right {
-      display: flex;
-      flex-direction: column;
+  &-main {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
 
-      &_field {
-        margin-bottom: @size-s;
-        width: fit-content;
-        display: flex;
-        font-size: 20px;
+    &__icon {
+      background: url("assets/icons/user.png");
+      width: 128px;
+      height: 128px;
+    }
 
-        &-value {
-          padding-left: @size-xxs;
-        }
-      }
+    &__name {
+      padding-top: @size-s;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: @size-m;
     }
   }
 
