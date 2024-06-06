@@ -21,7 +21,6 @@ const coreInfo = jsx(
       { class: 'core-info__container-consult' },
       jsx(
         { class: 'consultation', textContent: 'Тут будет окно с инфой для связи' },
-        jsx({}),
         jsx({ tag: 'input' }),
         jsx({ tag: 'input' }),
         jsx({ tag: 'input' }),

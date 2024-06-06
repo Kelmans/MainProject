@@ -14,17 +14,17 @@ const personalAcc = jsx(
     { class: 'personal-acc-view__sidebar' },
     jsx(
       { class: 'personal-acc-view__content' },
-      jsx({ class: 'personal-acc-view__content_icon' }),
+      jsx({ class: 'personal-acc-view__content-icon' }),
       jsx({
-        class: 'personal-acc-view__content_item',
+        class: 'personal-acc-view__content-text',
         textContent: 'Личный кабинет'
       }),
     ),
     jsx(
       { class: 'personal-acc-view__content' },
-      jsx({ class: 'personal-acc-view__content_icon' }),
+      jsx({ class: 'personal-acc-view__content-icon' }),
       jsx({
-        class: 'personal-acc-view__content_item',
+        class: 'personal-acc-view__content-text',
         textContent: 'Мои заказы'
       }),
     ),
