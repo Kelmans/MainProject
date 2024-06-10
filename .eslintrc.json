@@ -8,10 +8,15 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "globals": {
+        "google": "readonly"
+    },
     "plugins": [
         "filenames"
     ],
     "rules": {
+        "no-continue": "off",
+        "no-restricted-syntax": "off",
         "import/prefer-default-export": "off",
         "import/extensions": "off",
         "import/no-unresolved": "off",
